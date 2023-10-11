@@ -7,5 +7,6 @@ public class Main {
 
         //membuat objek dengan saldo awal sebesar 100000000
         Keuangan keuangan = new Keuangan(100000000);  // Saldo awal
+
     }
 }
