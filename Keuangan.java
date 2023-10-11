@@ -15,4 +15,13 @@ public class Keuangan {
     public void tambahPemasukan(int jumlahPemasukan) {
         saldo += jumlahPemasukan;
     }
+
+    //sebuah metode untuk mengecek dan mengurangi pengeluaran menggunakan kondisi if
+    public boolean kurangiPengeluaran(int jumlahPengeluaran) {
+        if (jumlahPengeluaran <= saldo) {
+            saldo -= jumlahPengeluaran;
+            return true;
+        }
+        return false;
+    }
 }
