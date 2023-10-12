@@ -8,5 +8,19 @@ public class Main {
         //membuat objek dengan saldo awal sebesar 100000000
         Keuangan keuangan = new Keuangan(100000000);  // Saldo awal
 
+        //memakai looping DO - WHILE agar looping terus berjalan sampai kita memaksa program keluar dari loop
+        //disini berarti jika kita menekan tombol 4 maka kita akan keluar dari program/aplikasi
+        while (true) {
+            //mencetak menu aplikasi
+            System.out.println("=== Aplikasi History Operasional ===");
+            System.out.println("1. Saldo");
+            System.out.println("2. Pemasukan");
+            System.out.println("3. Pengeluaran");
+            System.out.println("4. exit");
+
+            System.out.print("Masukkan pilihan (1/2/3/4): "); //menampilkan pesan untuk user memasukan pilihan
+
+        }
+
     }
 }
