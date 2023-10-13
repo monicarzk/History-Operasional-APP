@@ -19,13 +19,19 @@ public class Main {
             System.out.println("4. exit");
 
             System.out.print("Masukkan pilihan (1/2/3/4): "); //menampilkan pesan untuk user memasukan pilihan
-            int pilihan = scanner.nextInt(); //program mengambil input dari user menggunakan scanner
+            int pilihan = scanner.nextInt(); //program mengambil input dari user pake scanner
 
             //memakai switch case agar dapat memilih salah satu blok kode sesuai dengan pilihan user
             switch (pilihan) {
                 case 1:
                     System.out.println("Saldo Anda = Rp. " + keuangan.getSaldo()); //program akan memanggil nilai dari getter
                     break; //menghentikan eksekusi
+                case 2:
+                    System.out.print("Masukkan jumlah pemasukan: Rp. ");
+                    int jumlahPemasukan = scanner.nextInt(); //mengambil input angka yang dimasukan user pake scanner
+                    keuangan.tambahPemasukan(jumlahPemasukan); //program akan memanggil metode tambahPemasukan di objek keuangan
+                    System.out.println("Pemasukan = Rp. " + jumlahPemasukan); //mencetak jumlah pemasukan
+                    break; //menghentikan eksekusi dari blok kode
             }
         }
 
