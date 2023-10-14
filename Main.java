@@ -25,13 +25,23 @@ public class Main {
             switch (pilihan) {
                 case 1:
                     System.out.println("Saldo Anda = Rp. " + keuangan.getSaldo()); //program akan memanggil nilai dari getter
-                    break; //menghentikan eksekusi
+                    break; //menghentikan eksekusi dari blok kode case 1
                 case 2:
                     System.out.print("Masukkan jumlah pemasukan: Rp. ");
                     int jumlahPemasukan = scanner.nextInt(); //mengambil input angka yang dimasukan user pake scanner
                     keuangan.tambahPemasukan(jumlahPemasukan); //program akan memanggil metode tambahPemasukan di objek keuangan
                     System.out.println("Pemasukan = Rp. " + jumlahPemasukan); //mencetak jumlah pemasukan
-                    break; //menghentikan eksekusi dari blok kode
+                    break; //menghentikan eksekusi dari blok kode case 2
+                case 3:
+                    System.out.print("Masukkan jumlah pengeluaran: Rp. ");
+                    int jumlahPengeluaran = scanner.nextInt(); //mengambil input angka yang dimasukan user pake scanner
+                    //menggunakan metode if - else karena jika kondisi true maka bloke kode akan dijalankan jika false maka else yg akan dijalankan
+                    if (keuangan.kurangiPengeluaran(jumlahPengeluaran)) { //program akan memanggil metode kurangiPengeluaran di objek keuangan
+                        System.out.println("Pengeluaran = Rp. " + jumlahPengeluaran); //run jika kondisi true
+                    } else {
+                        System.out.println("Saldo tidak mencukupi untuk melakukan pengeluaran."); //run jika kondisi false
+                    }
+                    break; //menghentikan eksekusi dari blok kode case 3
             }
         }
 
