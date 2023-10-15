@@ -46,6 +46,10 @@ public class Main {
                     System.out.println("See you next time");
                     scanner.close(); //perintah untuk menutup objek scanner
                     System.exit(0); //perintah untuk mengakhiri program java, nilai 0 artinya program berakhir tanpa masalah
+                default:
+                    //pesan ini memberitahu user bahwa inputnya gak ada yang cocok sama 4 kasus yang diatas maka disarankan untuk memilih lagi
+                    //di default ini programnya masih jalan belum ke exit
+                    System.out.println("Pilihan tidak valid. Silakan pilih 1, 2, 3, atau 4.");
             }
         }
 
