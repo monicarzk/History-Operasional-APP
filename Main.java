@@ -42,6 +42,10 @@ public class Main {
                         System.out.println("Saldo tidak mencukupi untuk melakukan pengeluaran."); //run jika kondisi false
                     }
                     break; //menghentikan eksekusi dari blok kode case 3
+                case 4:
+                    System.out.println("See you next time");
+                    scanner.close(); //perintah untuk menutup objek scanner
+                    System.exit(0); //perintah untuk mengakhiri program java, nilai 0 artinya program berakhir tanpa masalah
             }
         }
 
